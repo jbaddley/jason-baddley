@@ -12,7 +12,7 @@ export function FeaturedProjects() {
           <div>
             <h2 className="font-mono text-sm text-primary">{"// projects"}</h2>
             <p className="mt-2 text-2xl font-bold tracking-tight">
-              Things I&apos;ve built
+              Things I&apos;m building
             </p>
           </div>
           <Link

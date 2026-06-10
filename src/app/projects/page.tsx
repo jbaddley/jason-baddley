@@ -14,7 +14,7 @@ export default function ProjectsPage() {
       <header className="max-w-2xl">
         <p className="font-mono text-sm text-primary">{"// projects"}</p>
         <h1 className="mt-3 text-4xl font-bold tracking-tight">
-          Things I&apos;ve built
+          Things I&apos;m building
         </h1>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           A few of the products I&apos;ve designed and shipped on my own time —
