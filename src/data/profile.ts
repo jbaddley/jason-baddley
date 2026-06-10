@@ -291,7 +291,7 @@ export const projects: Project[] = [
 export const schoolAI = {
   mission: "To make school awesome.",
   intro:
-    "I'm a Senior Software Engineer at SchoolAI, where we build AI that helps teachers do their best work and helps every student get the attention they deserve.",
+    "I'm a Senior Software Engineer at SchoolAI, where we strive to make school awesome for teachers, students, leaders and families.",
   paragraphs: [
     "SchoolAI brings safe, purpose-built AI into the classroom. Teachers get an assistant that saves hours of prep and admin time; students get a patient, always-available guide that meets them where they are; and administrators get the visibility and guardrails that make AI in school responsible.",
     "My work spans the full stack — React and TypeScript on the front end, Node.js services behind it, and deep integration with large language models. A decade of working with LLMs (since the very first OpenAI APIs) means I get to apply hard-won instincts about what makes AI genuinely useful and safe, not just flashy.",
