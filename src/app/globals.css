@@ -39,6 +39,8 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-chrome: var(--chrome);
+  --color-chrome-foreground: var(--chrome-foreground);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -53,6 +55,8 @@
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
+  --chrome: oklch(0.205 0 0);
+  --chrome-foreground: oklch(0.985 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.205 0 0);
@@ -89,6 +93,9 @@
   --foreground: oklch(0.96 0.008 248);
   --card: oklch(0.215 0.028 257);
   --card-foreground: oklch(0.96 0.008 248);
+  /* Distinct, deeper navy for the header/footer chrome */
+  --chrome: oklch(0.13 0.04 262);
+  --chrome-foreground: oklch(0.96 0.008 248);
   --popover: oklch(0.215 0.028 257);
   --popover-foreground: oklch(0.96 0.008 248);
   /* Sky/cyan accent */
