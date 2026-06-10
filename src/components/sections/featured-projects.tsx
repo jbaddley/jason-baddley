@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export function FeaturedProjects() {
   return (
-    <section className="border-t border-border/60 bg-card/30">
+    <section className="border-t border-brand-accent/15 bg-brand/25">
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
         <div className="flex items-end justify-between gap-4">
           <div>

@@ -2,7 +2,7 @@ import { techStack } from "@/data/profile";
 
 export function Skills() {
   return (
-    <section className="border-y border-border/60 bg-card/30">
+    <section className="border-y border-brand-accent/15 bg-brand/25">
       <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6">
         <h2 className="font-mono text-sm text-primary">{"// stack"}</h2>
         <div className="mt-6 flex flex-wrap gap-2.5">

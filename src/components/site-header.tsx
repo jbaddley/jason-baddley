@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -34,11 +35,22 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
         <Link
           href="/"
-          className="font-mono text-sm font-semibold tracking-tight text-foreground"
+          aria-label="Jason Baddley — home"
+          className="flex items-center gap-2.5"
         >
-          <span className="text-primary">jb</span>
-          <span className="text-muted-foreground">@baddley</span>
-          <span className="text-primary"> ~ $</span>
+          <Image
+            src="/icons/jbaddley-192x192.png"
+            alt="Jason Baddley logo"
+            width={32}
+            height={32}
+            priority
+            className="size-8 rounded-md ring-1 ring-brand-accent/30"
+          />
+          <span className="font-mono text-sm font-semibold tracking-tight">
+            <span className="text-primary">jb</span>
+            <span className="text-muted-foreground">@baddley</span>
+            <span className="text-primary"> ~ $</span>
+          </span>
         </Link>
 
         {/* Desktop nav */}

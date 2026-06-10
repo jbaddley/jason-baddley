@@ -41,6 +41,9 @@
   --color-card: var(--card);
   --color-chrome: var(--chrome);
   --color-chrome-foreground: var(--chrome-foreground);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-accent: var(--brand-accent);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -57,6 +60,9 @@
   --card-foreground: oklch(0.145 0 0);
   --chrome: oklch(0.205 0 0);
   --chrome-foreground: oklch(0.985 0 0);
+  --brand: #103d66;
+  --brand-foreground: #fdfefe;
+  --brand-accent: #00f0f0;
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.205 0 0);
@@ -96,6 +102,10 @@
   /* Distinct, deeper navy for the header/footer chrome */
   --chrome: oklch(0.13 0.04 262);
   --chrome-foreground: oklch(0.96 0.008 248);
+  /* Logo blue — used to define section areas */
+  --brand: #103d66;
+  --brand-foreground: #fdfefe;
+  --brand-accent: #00f0f0;
   --popover: oklch(0.215 0.028 257);
   --popover-foreground: oklch(0.96 0.008 248);
   /* Sky/cyan accent */

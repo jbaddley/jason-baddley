@@ -15,7 +15,7 @@ export default function SchoolAIPage() {
   return (
     <div>
       {/* Hero band */}
-      <section className="relative overflow-hidden border-b border-border/60 bg-card/40">
+      <section className="relative overflow-hidden border-b border-brand-accent/15 bg-brand/30">
         <div
           aria-hidden
           className="pointer-events-none absolute -top-24 right-0 size-[28rem] rounded-full bg-primary/10 blur-3xl"
