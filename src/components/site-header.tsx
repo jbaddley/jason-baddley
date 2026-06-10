@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -38,12 +37,14 @@ export function SiteHeader() {
           aria-label="Jason Baddley — home"
           className="flex items-center gap-2.5"
         >
-          <Image
-            src="/icons/jbaddley-192x192.png"
+          {/* Plain <img> with explicit basePath — next/image drops the basePath
+              for unoptimized static exports, which 404s under /jason-baddley/ */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/icons/jbaddley-192x192.png`}
             alt="Jason Baddley logo"
             width={32}
             height={32}
-            priority
             className="size-8 rounded-md ring-1 ring-brand-accent/30"
           />
           <span className="font-mono text-sm font-semibold tracking-tight">
