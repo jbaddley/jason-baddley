@@ -207,6 +207,7 @@ export type Project = {
   highlights: string[];
   stack: string[];
   repo: string;
+  repoPrivate?: boolean; // true → repo is private, don't render a public link
   links: ProjectLink[];
   accent: string; // tailwind text/border accent class hint
 };
@@ -281,6 +282,49 @@ export const projects: Project[] = [
       { label: "Live demo", href: "https://code-quest.jasonbaddley.workers.dev/" },
     ],
     accent: "text-sky-400",
+  },
+];
+
+/* ------------------------------------------------------------------ */
+/* Experiments                                                         */
+/* ------------------------------------------------------------------ */
+
+export const experiments: Project[] = [
+  {
+    slug: "db-ai",
+    name: "DB AI",
+    tagline: "An AI-assisted SQL explorer for PostgreSQL",
+    description:
+      "A desktop database client that pairs a modern SQL workbench with an AI assistant. It grounds a large language model in your live schema to turn plain-English questions into runnable SQL, making it possible to explore a Postgres database by describing what you want rather than remembering exact syntax. The goal was to distill the most valuable capabilities of tools like DBeaver, TablePlus, DataGrip, and Chat2DB into a focused, AI-first workflow.",
+    highlights: [
+      "Schema-grounded natural-language-to-SQL generation against a live connection",
+      "Encrypted local storage of connection credentials, with a read-only safe mode for sensitive environments",
+      "Schema browsing, multi-statement execution, and Zod-validated result handling",
+      "Built and scoped from a written product spec (PRD) and MVP validation checklist",
+    ],
+    stack: ["Electron", "Node.js", "PostgreSQL", "Prisma", "Zod", "LLM", "Tailwind"],
+    repo: "https://github.com/jbaddley/db-ai",
+    repoPrivate: true,
+    links: [],
+    accent: "text-fuchsia-400",
+  },
+  {
+    slug: "turn-by-turn-agent",
+    name: "Turn-by-Turn Agent",
+    tagline: "A tool-using AI agent framework, built from first principles",
+    description:
+      "A production-quality TypeScript monorepo that implements a complete turn-by-turn (ReAct) agent SDK from scratch. The aim is not to replace off-the-shelf frameworks but to deeply understand and document how a capable agent is built — every non-obvious design choice is captured in an architecture decision record. It ships with a working customer-support ticket-triage agent that wires all of the packages together.",
+    highlights: [
+      "Core ReAct turn loop with guardrails, checkpointing, and per-run cost tracking",
+      "Pluggable model providers (Anthropic, OpenAI) with automatic failover and error classification",
+      "A tool registry with a middleware pipeline and human approval gates",
+      "First-class Model Context Protocol (MCP) client with schema conversion",
+      "Context-compression memory and a full eval harness — recorder, replayer, and exact/contains/LLM judges",
+    ],
+    stack: ["TypeScript", "pnpm monorepo", "Anthropic", "OpenAI", "MCP", "Biome", "Vitest"],
+    repo: "https://github.com/jbaddley/turn-by-turn-agent",
+    links: [],
+    accent: "text-cyan-400",
   },
 ];
 

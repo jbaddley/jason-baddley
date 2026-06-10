@@ -1,4 +1,4 @@
-import { FaGithub, FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { FaGithub, FaArrowUpRightFromSquare, FaLock } from "react-icons/fa6";
 import {
   Card,
   CardContent,
@@ -71,15 +71,25 @@ export function ProjectCard({ project }: { project: Project }) {
               </a>
             ),
           )}
-          <a
-            href={project.repo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={buttonVariants({ variant: "ghost", size: "sm" })}
-          >
-            <FaGithub className="size-4" />
-            Code
-          </a>
+          {project.repoPrivate ? (
+            <span
+              className="inline-flex items-center gap-1.5 rounded-lg px-2.5 text-[0.8rem] text-muted-foreground"
+              title="Source is in a private repository"
+            >
+              <FaLock className="size-3.5" />
+              Private repo
+            </span>
+          ) : (
+            <a
+              href={project.repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={buttonVariants({ variant: "ghost", size: "sm" })}
+            >
+              <FaGithub className="size-4" />
+              Code
+            </a>
+          )}
         </div>
       </CardContent>
     </Card>
