@@ -208,6 +208,7 @@ export type Project = {
   stack: string[];
   repo: string;
   repoPrivate?: boolean; // true → repo is private, don't render a public link
+  detailHref?: string; // internal route to a dedicated deep-dive page
   links: ProjectLink[];
   accent: string; // tailwind text/border accent class hint
 };
@@ -305,6 +306,7 @@ export const experiments: Project[] = [
     stack: ["Electron", "Node.js", "PostgreSQL", "Prisma", "Zod", "LLM", "Tailwind"],
     repo: "https://github.com/jbaddley/db-ai",
     repoPrivate: true,
+    detailHref: "/db-ai",
     links: [],
     accent: "text-fuchsia-400",
   },
