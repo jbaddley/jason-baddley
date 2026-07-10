@@ -68,6 +68,10 @@ export const topSkills: Skill[] = [
 ];
 
 export const techStack: Skill[] = [
+  // AI & data
+  { label: "OpenAI / LLMs", icon: SiOpenai },
+  { label: "D3.js", icon: SiD3 },
+  // Full-stack core
   { label: "TypeScript", icon: SiTypescript },
   { label: "React", icon: SiReact },
   { label: "Next.js", icon: SiNextdotjs },
@@ -75,12 +79,11 @@ export const techStack: Skill[] = [
   { label: "PostgreSQL", icon: SiPostgresql },
   { label: "Prisma", icon: SiPrisma },
   { label: "Tailwind CSS", icon: SiTailwindcss },
+  // Platform & infra
   { label: "AWS", icon: FaAws },
-  { label: "OpenAI / LLMs", icon: SiOpenai },
   { label: "Cloudflare Workers", icon: SiCloudflare },
-  { label: "Go", icon: SiGo },
   { label: "Kubernetes", icon: SiKubernetes },
-  { label: "D3.js", icon: SiD3 },
+  { label: "Go", icon: SiGo },
   { label: "Electron", icon: SiElectron },
 ];
 
