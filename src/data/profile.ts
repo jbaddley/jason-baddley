@@ -14,7 +14,7 @@ import {
   SiD3,
   SiElectron,
 } from "react-icons/si";
-import { FaBrain } from "react-icons/fa6";
+import { FaBrain, FaLightbulb, FaRobot } from "react-icons/fa6";
 import { FaAws } from "react-icons/fa";
 
 /* ------------------------------------------------------------------ */
@@ -57,9 +57,14 @@ export const profile = {
 export type Skill = { label: string; icon?: IconType };
 
 export const topSkills: Skill[] = [
-  { label: "Amazon Web Services", icon: FaAws },
-  { label: "Large Language Models", icon: FaBrain },
+  { label: "Product Engineering", icon: FaLightbulb },
+  { label: "AI-Native Development", icon: FaBrain },
+  { label: "LLM Agents & Tool Use", icon: FaRobot },
+  { label: "React & TypeScript", icon: SiReact },
   { label: "Node.js", icon: SiNodedotjs },
+  { label: "PostgreSQL", icon: SiPostgresql },
+  { label: "Data Visualization", icon: SiD3 },
+  { label: "Next.js", icon: SiNextdotjs },
 ];
 
 export const techStack: Skill[] = [
