@@ -14,7 +14,7 @@ import {
   SiD3,
   SiElectron,
 } from "react-icons/si";
-import { FaBrain } from "react-icons/fa6";
+import { FaBrain, FaLightbulb, FaRobot } from "react-icons/fa6";
 import { FaAws } from "react-icons/fa";
 
 /* ------------------------------------------------------------------ */
@@ -23,14 +23,18 @@ import { FaAws } from "react-icons/fa";
 
 export const profile = {
   name: "Jason Baddley",
-  title: "Fullstack React, Node.js & TypeScript Engineering Leader",
+  title: "Product Engineer & Inventor",
+  hook: "When the tool I need doesn't exist, I build it.",
   location: "Lehi, Utah, United States",
   tagline:
-    "Senior software engineer and engineering leader with 13+ years shipping React, TypeScript, and Node.js products — and a lifelong habit of turning hard problems into shipped software.",
+    "Product engineer and inventor with 10+ years turning vague ideas into shipped products. My roots are in business intelligence and data visualization; my present is AI — building agents, tool use, and LLM-driven features end to end. I take a fuzzy problem, make it real, and iterate with users until it beats what they imagined.",
   summary: [
-    "I build products and the teams that ship them. Over more than a decade I've worked across the stack with React, TypeScript, Node.js, Next.js, Tailwind, and Postgres — leading frontend architecture, managing engineers, and writing the code right alongside them.",
-    "I've been working with LLMs since OpenAI's first APIs shipped, and I love putting cutting-edge AI to work on real problems. Whether it's enterprise-scale features for tens of thousands of users or a tool built over a weekend, my favorite thing is making software that genuinely makes people's lives easier.",
+    "I'm a product engineer who lives at the intersection of technical depth and creative instinct. For over a decade I've built data-heavy products — custom d3 dashboards and BI tools early on, full-stack React/TypeScript/Node/Postgres applications since, and lately AI-native features: chat agents with tool use, LLM output governance, and the pipelines that make them trustworthy.",
+    "What actually drives me is invention. When I couldn't find a good way to run a data-driven beta-reader program for my upcoming book, I built one (heyjustwrite.com). When I wanted to investigate our databases by asking questions in plain language, I built an AI tool to compose and test the queries. I don't do my best work against PRDs and line-level requirements — I do it by taking an abstract idea, making it real, and refining it shoulder-to-shoulder with the people who'll use it.",
+    "My favorite moment is demo day — not just showing what we built, but watching users see what's suddenly possible and start dreaming out loud. Turning those dreams into something that actually works is the whole job to me. It starts with asking questions until I understand the problem someone is truly trying to solve, not just the steps they've always used to solve it.",
   ],
+  lookingFor:
+    "Where I'm headed: larger impact on ambitious products by bringing both sides of the table — the technical build and the creative, UX-driven judgment about what's worth building at all. I want high autonomy, real ownership, and very little process between an idea and a shipped feature. I'm especially drawn to AI-native products in data, BI, and developer tools — places where a strong opinion about the user experience changes what the product can be.",
   contact: {
     email: "jasonbaddley@gmail.com",
     github: "https://github.com/jbaddley",
@@ -53,12 +57,21 @@ export const profile = {
 export type Skill = { label: string; icon?: IconType };
 
 export const topSkills: Skill[] = [
-  { label: "Amazon Web Services", icon: FaAws },
-  { label: "Large Language Models", icon: FaBrain },
+  { label: "Product Engineering", icon: FaLightbulb },
+  { label: "AI-Native Development", icon: FaBrain },
+  { label: "LLM Agents & Tool Use", icon: FaRobot },
+  { label: "React & TypeScript", icon: SiReact },
   { label: "Node.js", icon: SiNodedotjs },
+  { label: "PostgreSQL", icon: SiPostgresql },
+  { label: "Data Visualization", icon: SiD3 },
+  { label: "Next.js", icon: SiNextdotjs },
 ];
 
 export const techStack: Skill[] = [
+  // AI & data
+  { label: "OpenAI / LLMs", icon: SiOpenai },
+  { label: "D3.js", icon: SiD3 },
+  // Full-stack core
   { label: "TypeScript", icon: SiTypescript },
   { label: "React", icon: SiReact },
   { label: "Next.js", icon: SiNextdotjs },
@@ -66,12 +79,11 @@ export const techStack: Skill[] = [
   { label: "PostgreSQL", icon: SiPostgresql },
   { label: "Prisma", icon: SiPrisma },
   { label: "Tailwind CSS", icon: SiTailwindcss },
+  // Platform & infra
   { label: "AWS", icon: FaAws },
-  { label: "OpenAI / LLMs", icon: SiOpenai },
   { label: "Cloudflare Workers", icon: SiCloudflare },
-  { label: "Go", icon: SiGo },
   { label: "Kubernetes", icon: SiKubernetes },
-  { label: "D3.js", icon: SiD3 },
+  { label: "Go", icon: SiGo },
   { label: "Electron", icon: SiElectron },
 ];
 
@@ -208,6 +220,7 @@ export type Project = {
   stack: string[];
   repo: string;
   repoPrivate?: boolean; // true → repo is private, don't render a public link
+  detailHref?: string; // internal route to a dedicated deep-dive page
   links: ProjectLink[];
   accent: string; // tailwind text/border accent class hint
 };
@@ -265,32 +278,6 @@ export const projects: Project[] = [
     accent: "text-emerald-400",
   },
   {
-    slug: "code-quest",
-    name: "Code Quest",
-    tagline: "A Blockly maze game that teaches kids to code",
-    description:
-      "A SchoolAI PowerUp: a drag-and-drop Blockly maze game that teaches programming fundamentals — sequencing, loops, conditionals, and variables — to 3rd–5th graders, with an AI co-teacher named Dot guiding the experience.",
-    highlights: [
-      "Dot, the AI co-teacher, drives the lesson through MCP tool calls",
-      "Real-time iframe ↔ Durable Object communication over WebSockets",
-      "Built on Cloudflare Workers with the Model Context Protocol",
-      "Blockly + CodeMirror playground bundled with Vite",
-    ],
-    stack: ["Cloudflare Workers", "Durable Objects", "React", "Vite", "Blockly", "MCP SDK", "Anthropic SDK"],
-    repo: "https://github.com/jbaddley/code-quest",
-    links: [
-      { label: "Live demo", href: "https://code-quest.jasonbaddley.workers.dev/" },
-    ],
-    accent: "text-sky-400",
-  },
-];
-
-/* ------------------------------------------------------------------ */
-/* Experiments                                                         */
-/* ------------------------------------------------------------------ */
-
-export const experiments: Project[] = [
-  {
     slug: "db-ai",
     name: "DB AI",
     tagline: "An AI-assisted SQL explorer for PostgreSQL",
@@ -305,9 +292,17 @@ export const experiments: Project[] = [
     stack: ["Electron", "Node.js", "PostgreSQL", "Prisma", "Zod", "LLM", "Tailwind"],
     repo: "https://github.com/jbaddley/db-ai",
     repoPrivate: true,
+    detailHref: "/db-ai",
     links: [],
     accent: "text-fuchsia-400",
   },
+];
+
+/* ------------------------------------------------------------------ */
+/* Experiments                                                         */
+/* ------------------------------------------------------------------ */
+
+export const experiments: Project[] = [
   {
     slug: "turn-by-turn-agent",
     name: "Turn-by-Turn Agent",

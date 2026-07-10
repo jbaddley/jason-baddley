@@ -1,4 +1,5 @@
-import { FaGithub, FaArrowUpRightFromSquare, FaLock } from "react-icons/fa6";
+import Link from "next/link";
+import { FaGithub, FaArrowUpRightFromSquare, FaArrowRight, FaLock } from "react-icons/fa6";
 import {
   Card,
   CardContent,
@@ -46,7 +47,16 @@ export function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
 
-        <div className="mt-auto flex flex-wrap gap-2 pt-2">
+        <div className="mt-auto flex flex-wrap items-center gap-2 pt-2">
+          {project.detailHref && (
+            <Link
+              href={project.detailHref}
+              className={buttonVariants({ size: "sm" })}
+            >
+              Deep dive
+              <FaArrowRight className="size-3" />
+            </Link>
+          )}
           {project.links.map((link) =>
             link.comingSoon ? (
               <Button

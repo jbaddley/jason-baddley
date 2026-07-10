@@ -6,7 +6,7 @@ import { ProjectCard } from "@/components/project-card";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Personal projects Jason Baddley has built — Theater Stack, Just Write, Utilio, and Code Quest.",
+    "Personal projects Jason Baddley has built — Theater Stack, Just Write, Utilio, and DB AI.",
 };
 
 export default function ProjectsPage() {
@@ -18,10 +18,10 @@ export default function ProjectsPage() {
           Things I&apos;m building
         </h1>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-          A few of the things I&apos;ve been building on my own time — from a
-          platform for community theaters to AI tooling and tools that teach kids
-          to code. These are the side projects that keep me sharp and remind me
-          why I love this work.
+          A few of the things I&apos;ve been building on my own time — a platform
+          for community theaters, AI-powered desktop apps, and a suite of
+          browser-based tools. These are the side projects that keep me sharp and
+          remind me why I love this work.
         </p>
       </header>
 

@@ -25,7 +25,10 @@ export function Hero() {
         <p className="mt-4 max-w-2xl text-lg text-muted-foreground sm:text-xl">
           {profile.title}
         </p>
-        <p className="mt-1 font-mono text-sm text-muted-foreground/80">
+        <p className="mt-3 max-w-2xl text-base font-medium text-primary sm:text-lg">
+          {profile.hook}
+        </p>
+        <p className="mt-3 font-mono text-sm text-muted-foreground/80">
           {profile.location}
         </p>
 

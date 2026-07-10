@@ -6,7 +6,7 @@ import { ProjectCard } from "@/components/project-card";
 export const metadata: Metadata = {
   title: "Experiments",
   description:
-    "Deeper technical experiments by Jason Baddley — DB AI, an AI-assisted SQL explorer, and a turn-by-turn agent framework built from first principles.",
+    "Deeper technical experiments by Jason Baddley — including a turn-by-turn (ReAct) AI agent framework built from first principles.",
 };
 
 export default function ExperimentsPage() {
@@ -21,7 +21,7 @@ export default function ExperimentsPage() {
           These are research-driven builds — the projects I take on to learn a
           domain by building it from the ground up. They&apos;re where I work out
           how something really functions, document the trade-offs, and push my own
-          understanding of databases and AI agents further.
+          understanding of AI agents and systems further.
         </p>
       </header>
 
