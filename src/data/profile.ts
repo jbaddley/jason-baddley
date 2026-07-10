@@ -266,32 +266,6 @@ export const projects: Project[] = [
     accent: "text-emerald-400",
   },
   {
-    slug: "code-quest",
-    name: "Code Quest",
-    tagline: "A Blockly maze game that teaches kids to code",
-    description:
-      "A SchoolAI PowerUp: a drag-and-drop Blockly maze game that teaches programming fundamentals — sequencing, loops, conditionals, and variables — to 3rd–5th graders, with an AI co-teacher named Dot guiding the experience.",
-    highlights: [
-      "Dot, the AI co-teacher, drives the lesson through MCP tool calls",
-      "Real-time iframe ↔ Durable Object communication over WebSockets",
-      "Built on Cloudflare Workers with the Model Context Protocol",
-      "Blockly + CodeMirror playground bundled with Vite",
-    ],
-    stack: ["Cloudflare Workers", "Durable Objects", "React", "Vite", "Blockly", "MCP SDK", "Anthropic SDK"],
-    repo: "https://github.com/jbaddley/code-quest",
-    links: [
-      { label: "Live demo", href: "https://code-quest.jasonbaddley.workers.dev/" },
-    ],
-    accent: "text-sky-400",
-  },
-];
-
-/* ------------------------------------------------------------------ */
-/* Experiments                                                         */
-/* ------------------------------------------------------------------ */
-
-export const experiments: Project[] = [
-  {
     slug: "db-ai",
     name: "DB AI",
     tagline: "An AI-assisted SQL explorer for PostgreSQL",
@@ -310,6 +284,13 @@ export const experiments: Project[] = [
     links: [],
     accent: "text-fuchsia-400",
   },
+];
+
+/* ------------------------------------------------------------------ */
+/* Experiments                                                         */
+/* ------------------------------------------------------------------ */
+
+export const experiments: Project[] = [
   {
     slug: "turn-by-turn-agent",
     name: "Turn-by-Turn Agent",
