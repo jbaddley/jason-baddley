@@ -5,7 +5,8 @@ export function Timeline() {
     <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
       <h2 className="font-mono text-sm text-primary">{"// experience"}</h2>
       <p className="mt-2 text-sm text-muted-foreground">
-        13+ years across startups and enterprise — leading teams and shipping code.
+        10+ years across startups and enterprise — from data visualization and BI
+        to full-stack product engineering and AI.
       </p>
 
       <ol className="mt-10 space-y-8 border-l border-border/70 pl-6">

@@ -12,6 +12,14 @@ export function Summary() {
               <p key={p.slice(0, 24)}>{p}</p>
             ))}
           </div>
+          <div className="mt-6 rounded-xl border border-brand-accent/25 bg-brand/25 p-4">
+            <h3 className="font-mono text-xs uppercase tracking-wide text-brand-accent">
+              What I&apos;m looking for
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-foreground/90">
+              {profile.lookingFor}
+            </p>
+          </div>
         </div>
         <div className="space-y-6">
           <div>
