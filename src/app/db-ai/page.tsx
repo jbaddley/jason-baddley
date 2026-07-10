@@ -12,7 +12,6 @@ import {
   FaTableCells,
   FaKey,
   FaWrench,
-  FaTriangleExclamation,
   FaCircleCheck,
 } from "react-icons/fa6";
 import {
@@ -361,16 +360,14 @@ export default function DbAiPage() {
                 want instead of remembering exact syntax.
               </p>
               <div className="mt-7 flex flex-wrap items-center gap-3">
+                <span className="inline-flex items-center gap-1.5 rounded-lg border border-primary/25 bg-primary/10 px-3 py-2 text-sm text-primary">
+                  <FaCode className="size-3.5" />
+                  Designed &amp; built solo — spec to shipped
+                </span>
                 <span className="inline-flex items-center gap-1.5 rounded-lg border border-border px-3 py-2 text-sm text-muted-foreground">
                   <FaLock className="size-3.5" />
                   Source in a private repo
                 </span>
-                <Link
-                  href="/experiments"
-                  className={buttonVariants({ variant: "outline" })}
-                >
-                  <FaArrowLeft className="size-3.5" /> All experiments
-                </Link>
               </div>
             </div>
             <AppPreview />
@@ -503,27 +500,25 @@ export default function DbAiPage() {
         <div className="mx-auto flex max-w-5xl flex-col items-start gap-6 px-4 py-16 sm:px-6 md:flex-row md:items-center md:justify-between">
           <div className="max-w-xl">
             <h3 className="text-2xl font-bold tracking-tight">
-              Want a closer look?
+              This is what I ship on my own
             </h3>
-            <p className="mt-3 flex items-start gap-2 text-base leading-relaxed text-muted-foreground">
-              <FaTriangleExclamation className="mt-1 size-4 shrink-0 text-brand-accent" />
-              DB AI is an active experiment and its source lives in a private
-              repository. I&apos;m happy to walk companies through it live — reach
-              out and I&apos;ll give you a full demo.
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+              DB AI went from a written product spec to a working desktop app —
+              schema-grounded AI, a full SQL workbench, and production-minded
+              guardrails — scoped, designed, and built end to end by one product
+              engineer. It&apos;s a fair sample of how I work: take an ambiguous
+              problem, decide what actually matters, and ship it.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a
-              href="mailto:jasonbaddley@gmail.com?subject=DB%20AI%20demo"
-              className={buttonVariants()}
-            >
-              Request a demo <FaArrowRight className="size-3.5" />
-            </a>
+            <Link href="/projects" className={buttonVariants()}>
+              See more of my work <FaArrowRight className="size-3.5" />
+            </Link>
             <Link
-              href="/projects"
+              href="/experiments"
               className={buttonVariants({ variant: "outline" })}
             >
-              More projects
+              <FaArrowLeft className="size-3.5" /> All experiments
             </Link>
           </div>
         </div>
