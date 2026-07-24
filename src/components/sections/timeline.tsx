@@ -5,12 +5,12 @@ const ownershipHighlights = [
   {
     label: "Real Growth Media",
     detail: "Founder, current",
-    body: "My own company, my own risk.",
+    body: "I decide what happens here, and I live with the results.",
   },
   {
     label: "Omadi, Senior Web Application Developer",
     detail: "2017 – 2019",
-    body: "Took a greenfield platform from mock-ups to production in days, replacing enterprise incumbent software.",
+    body: "Took a greenfield platform from mock-ups to production in days, replacing an enterprise incumbent.",
   },
   {
     label: "DB AI",
@@ -25,9 +25,8 @@ export function Timeline() {
     <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
       <h2 className="font-mono text-sm text-primary">{"// experience"}</h2>
       <p className="mt-2 text-sm text-muted-foreground">
-        10+ years across startups and enterprise — including running my own
-        company and leading 0-to-1 builds, not just maintaining what already
-        existed.
+        10+ years across startups and enterprise, including running my own
+        company and taking a few projects from zero to shipped.
       </p>
 
       <div className="mt-6 rounded-xl border border-brand-accent/25 bg-brand/25 p-4">

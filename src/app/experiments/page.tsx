@@ -29,10 +29,10 @@ export default function ExperimentsPage() {
         <FaFlaskVial className="mt-0.5 size-5 shrink-0 text-brand-accent" />
         <p className="text-sm leading-relaxed text-foreground/90">
           <span className="font-semibold">Built solo, to a production bar.</span>{" "}
-          These aren&apos;t tutorials or toy demos — they&apos;re fully-featured
-          systems (guardrails, cost tracking, eval harnesses) that happen to exist
-          because I wanted to understand something completely, not because a
-          customer asked for it. Some source lives in private repositories.
+          These aren&apos;t tutorials or toy demos. They&apos;re fully-featured
+          systems (guardrails, cost tracking, eval harnesses) that exist because I
+          wanted to understand something completely, not because a customer asked
+          for it. Some source lives in private repositories.
         </p>
       </div>
 

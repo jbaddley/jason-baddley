@@ -28,12 +28,11 @@ export default function ProjectsPage() {
       <div className="mt-8 flex max-w-3xl gap-3 rounded-xl border border-brand-accent/25 bg-brand/25 p-4">
         <FaFlaskVial className="mt-0.5 size-5 shrink-0 text-brand-accent" />
         <p className="text-sm leading-relaxed text-foreground/90">
-          <span className="font-semibold">Built and shipped on my own initiative — no PRD required.</span>{" "}
+          <span className="font-semibold">Built and shipped on my own initiative, no product spec required.</span>{" "}
           Everything here started as a problem I decided was worth solving, and I
-          own it end-to-end: product decisions, architecture, and code. Some are
-          live and in daily use (heyjustwrite.com, utilio.solutions); some are
-          mid-flight because I&apos;m still deciding what&apos;s next. That&apos;s
-          what building without a team looks like.
+          own it end to end: product decisions, architecture, and code. Some are
+          live and in daily use (heyjustwrite.com, utilio.solutions). Others are
+          mid-flight because I&apos;m still deciding what&apos;s next.
         </p>
       </div>
 
