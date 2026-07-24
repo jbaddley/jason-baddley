@@ -20,20 +20,20 @@ export default function ProjectsPage() {
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
           A few of the things I&apos;ve been building on my own time — a platform
           for community theaters, AI-powered desktop apps, and a suite of
-          browser-based tools. These are the side projects that keep me sharp and
-          remind me why I love this work.
+          browser-based tools. Each one is proof I can take an idea from zero to
+          something real without anyone assigning it to me.
         </p>
       </header>
 
       <div className="mt-8 flex max-w-3xl gap-3 rounded-xl border border-brand-accent/25 bg-brand/25 p-4">
         <FaFlaskVial className="mt-0.5 size-5 shrink-0 text-brand-accent" />
         <p className="text-sm leading-relaxed text-foreground/90">
-          <span className="font-semibold">Heads up — these are works in progress.</span>{" "}
-          Every project here is a personal experiment: a playground where I get to
-          flex my skills and build things I actually use. They&apos;re not finished
-          software, and they aren&apos;t being advertised for public use at this
-          point. Expect rough edges, half-built features, and the occasional
-          change of direction.
+          <span className="font-semibold">Built and shipped on my own initiative — no PRD required.</span>{" "}
+          Everything here started as a problem I decided was worth solving, and I
+          own it end-to-end: product decisions, architecture, and code. Some are
+          live and in daily use (heyjustwrite.com, utilio.solutions); some are
+          mid-flight because I&apos;m still deciding what&apos;s next. That&apos;s
+          what building without a team looks like.
         </p>
       </div>
 

@@ -1,13 +1,61 @@
+import Link from "next/link";
 import { experience } from "@/data/profile";
+
+const ownershipHighlights = [
+  {
+    label: "Real Growth Media",
+    detail: "Founder, current",
+    body: "My own company, my own risk.",
+  },
+  {
+    label: "Omadi, Senior Web Application Developer",
+    detail: "2017 – 2019",
+    body: "Took a greenfield platform from mock-ups to production in days, replacing enterprise incumbent software.",
+  },
+  {
+    label: "DB AI",
+    detail: "Personal project",
+    body: "Solo-built, spec to shipped.",
+    href: "/db-ai",
+  },
+];
 
 export function Timeline() {
   return (
     <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
       <h2 className="font-mono text-sm text-primary">{"// experience"}</h2>
       <p className="mt-2 text-sm text-muted-foreground">
-        10+ years across startups and enterprise — from data visualization and BI
-        to full-stack product engineering and AI.
+        10+ years across startups and enterprise — including running my own
+        company and leading 0-to-1 builds, not just maintaining what already
+        existed.
       </p>
+
+      <div className="mt-6 rounded-xl border border-brand-accent/25 bg-brand/25 p-4">
+        <h3 className="font-mono text-xs uppercase tracking-wide text-brand-accent">
+          Where I&apos;ve owned the outcome
+        </h3>
+        <div className="mt-3 grid gap-4 sm:grid-cols-3">
+          {ownershipHighlights.map((item) => (
+            <div key={item.label}>
+              <p className="text-sm font-semibold text-foreground">
+                {item.href ? (
+                  <Link href={item.href} className="hover:underline">
+                    {item.label}
+                  </Link>
+                ) : (
+                  item.label
+                )}
+              </p>
+              <p className="font-mono text-xs text-muted-foreground">
+                {item.detail}
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-foreground/90">
+                {item.body}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
 
       <ol className="mt-10 space-y-8 border-l border-border/70 pl-6">
         {experience.map((job, i) => (

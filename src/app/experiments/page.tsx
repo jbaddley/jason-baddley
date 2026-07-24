@@ -18,19 +18,21 @@ export default function ExperimentsPage() {
           Going deeper
         </h1>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-          These are research-driven builds — the projects I take on to learn a
-          domain by building it from the ground up. They&apos;re where I work out
-          how something really functions, document the trade-offs, and push my own
-          understanding of AI agents and systems further.
+          When I want to know if I can build something at a production standard, I
+          build it myself, end to end, and hold myself to the same bar I&apos;d use
+          shipping to real users. These are the deepest dives — where I go past
+          &quot;good enough&quot; to understand a system all the way down.
         </p>
       </header>
 
       <div className="mt-8 flex max-w-3xl gap-3 rounded-xl border border-brand-accent/25 bg-brand/25 p-4">
         <FaFlaskVial className="mt-0.5 size-5 shrink-0 text-brand-accent" />
         <p className="text-sm leading-relaxed text-foreground/90">
-          <span className="font-semibold">Exploratory by design.</span> These are
-          personal R&amp;D efforts focused on understanding and craftsmanship, not
-          finished products. Some source lives in private repositories.
+          <span className="font-semibold">Built solo, to a production bar.</span>{" "}
+          These aren&apos;t tutorials or toy demos — they&apos;re fully-featured
+          systems (guardrails, cost tracking, eval harnesses) that happen to exist
+          because I wanted to understand something completely, not because a
+          customer asked for it. Some source lives in private repositories.
         </p>
       </div>
 

@@ -7,7 +7,6 @@ import {
   SiPostgresql,
   SiPrisma,
   SiTailwindcss,
-  SiOpenai,
   SiCloudflare,
   SiGo,
   SiKubernetes,
@@ -23,18 +22,18 @@ import { FaAws } from "react-icons/fa";
 
 export const profile = {
   name: "Jason Baddley",
-  title: "Product Engineer & Inventor",
-  hook: "When the tool I need doesn't exist, I build it.",
+  title: "Founding Engineer",
+  hook: "I don't wait for a spec — I decide what to build, then build it.",
   location: "Lehi, Utah, United States",
   tagline:
-    "Product engineer and inventor with 10+ years turning vague ideas into shipped products. My roots are in business intelligence and data visualization; my present is AI — building agents, tool use, and LLM-driven features end to end. I take a fuzzy problem, make it real, and iterate with users until it beats what they imagined.",
+    "Founder and full-stack engineer with 10+ years turning vague ideas into shipped products — usually as the person who decided what to build, not just how. My roots are in business intelligence and data visualization; my present is AI — building agents, tool use, and LLM-driven features end to end, alone when I have to be. I take a fuzzy problem, make it real, and iterate with users until it beats what they imagined.",
   summary: [
-    "I'm a product engineer who lives at the intersection of technical depth and creative instinct. For over a decade I've built data-heavy products — custom d3 dashboards and BI tools early on, full-stack React/TypeScript/Node/Postgres applications since, and lately AI-native features: chat agents with tool use, LLM output governance, and the pipelines that make them trustworthy.",
-    "What actually drives me is invention. When I couldn't find a good way to run a data-driven beta-reader program for my upcoming book, I built one (heyjustwrite.com). When I wanted to investigate our databases by asking questions in plain language, I built an AI tool to compose and test the queries. I don't do my best work against PRDs and line-level requirements — I do it by taking an abstract idea, making it real, and refining it shoulder-to-shoulder with the people who'll use it.",
+    "I'm an engineer who's most useful when there's no spec yet — someone has to decide what's worth building, and then build it. For over a decade I've built data-heavy products — custom d3 dashboards and BI tools early on, full-stack React/TypeScript/Node/Postgres applications since, and lately AI-native features: chat agents with tool use, LLM output governance, and the pipelines that make them trustworthy.",
+    "What actually drives me is invention. When I couldn't find a good way to run a data-driven beta-reader program for my upcoming book, I built one (heyjustwrite.com). When I wanted to investigate our databases by asking questions in plain language, I built an AI tool to compose and test the queries. I don't do my best work against PRDs and line-level requirements — I do it by taking an abstract idea, making it real, and refining it shoulder-to-shoulder with the people who'll use it. I've also done this with my own money on the line — Real Growth Media is my own company, where I'm the one deciding what gets built and living with the result.",
     "My favorite moment is demo day — not just showing what we built, but watching users see what's suddenly possible and start dreaming out loud. Turning those dreams into something that actually works is the whole job to me. It starts with asking questions until I understand the problem someone is truly trying to solve, not just the steps they've always used to solve it.",
   ],
   lookingFor:
-    "Where I'm headed: larger impact on ambitious products by bringing both sides of the table — the technical build and the creative, UX-driven judgment about what's worth building at all. I want high autonomy, real ownership, and very little process between an idea and a shipped feature. I'm especially drawn to AI-native products in data, BI, and developer tools — places where a strong opinion about the user experience changes what the product can be.",
+    "Where I'm headed: a founding engineer role at an early-stage startup, where I bring both sides of the table — the technical build and the creative, UX-driven judgment about what's worth building at all. I want high autonomy, real ownership, and very little process between an idea and a shipped feature — not just implementing someone else's roadmap, but helping set it. I'm especially drawn to AI-native products in data, BI, and developer tools, where a strong opinion about the user experience changes what the product can be.",
   contact: {
     email: "jasonbaddley@gmail.com",
     github: "https://github.com/jbaddley",
@@ -69,7 +68,7 @@ export const topSkills: Skill[] = [
 
 export const techStack: Skill[] = [
   // AI & data
-  { label: "OpenAI / LLMs", icon: SiOpenai },
+  { label: "OpenAI / LLMs", icon: FaRobot },
   { label: "D3.js", icon: SiD3 },
   // Full-stack core
   { label: "TypeScript", icon: SiTypescript },
@@ -116,7 +115,7 @@ export const experience: Experience[] = [
     period: "May 2023 – Present",
     location: "Lehi, Utah",
     blurb:
-      "Helping small businesses solve problems with technology. I bring 13+ years of React, TypeScript, Node.js, and Postgres — plus AI tooling built on OpenAI's APIs — to help ventures get off the ground.",
+      "My own company. I decide what to build, sell it, build it, and live with the outcome — 13+ years of React, TypeScript, Node.js, and Postgres, plus AI tooling built on OpenAI's APIs, applied on my own account rather than someone else's roadmap.",
     current: true,
   },
   {
@@ -133,7 +132,7 @@ export const experience: Experience[] = [
     period: "Jan 2022 – May 2023",
     location: "Lehi, Utah",
     blurb:
-      "Led the frontend team and managed a group of engineers rebuilding Weave's scheduling platform. Guided technical direction with product and mentored new engineers while delivering scalable, enterprise-class features to 27k+ users with TypeScript, React, Go, Postgres, Kubernetes, and gRPC.",
+      "Led the frontend team and set technical direction for rebuilding Weave's scheduling platform from the ground up — the one accountable when the architecture call was mine to make. Delivered scalable, enterprise-class features to 27k+ users with TypeScript, React, Go, Postgres, Kubernetes, and gRPC, while mentoring the engineers who built it.",
   },
   {
     company: "Weave HQ",
@@ -165,7 +164,7 @@ export const experience: Experience[] = [
     period: "Jun 2017 – Dec 2019",
     location: "Lehi, Utah",
     blurb:
-      "Led frontend architecture on a greenfield project that displaced Oracle Field Services at a prominent global company — taking ideas from mock-ups to working solutions in days.",
+      "Took full ownership of frontend architecture for a greenfield platform that displaced Oracle Field Services at a prominent global company — zero to production, mock-ups to shipped solutions in days, not sprints.",
   },
   {
     company: "Numetric",
@@ -308,7 +307,7 @@ export const experiments: Project[] = [
     name: "Turn-by-Turn Agent",
     tagline: "A tool-using AI agent framework, built from first principles",
     description:
-      "A production-quality TypeScript monorepo that implements a complete turn-by-turn (ReAct) agent SDK from scratch. The aim is not to replace off-the-shelf frameworks but to deeply understand and document how a capable agent is built — every non-obvious design choice is captured in an architecture decision record. It ships with a working customer-support ticket-triage agent that wires all of the packages together.",
+      "A production-quality TypeScript monorepo that implements a complete turn-by-turn (ReAct) agent SDK from scratch. The aim is not to replace off-the-shelf frameworks but to deeply understand and document how a capable agent is built — every non-obvious design choice is captured in an architecture decision record. It ships with a working customer-support ticket-triage agent that wires all of the packages together. It's the clearest evidence I have that I can design and ship real infrastructure alone, not just consume someone else's SDK.",
     highlights: [
       "Core ReAct turn loop with guardrails, checkpointing, and per-run cost tracking",
       "Pluggable model providers (Anthropic, OpenAI) with automatic failover and error classification",
@@ -334,7 +333,7 @@ export const schoolAI = {
   paragraphs: [
     "SchoolAI brings safe, purpose-built AI into the classroom. Teachers get an assistant that saves hours of prep and admin time; students get a patient, always-available guide that meets them where they are; and administrators get the visibility and guardrails that make AI in school responsible.",
     "My work spans the full stack — React and TypeScript on the front end, Node.js services behind it, and deep integration with large language models. A decade of working with LLMs (since the very first OpenAI APIs) means I get to apply hard-won instincts about what makes AI genuinely useful and safe, not just flashy.",
-    "A great example is Code Quest, a SchoolAI PowerUp I built: a Blockly maze game that teaches kids the fundamentals of coding, with an AI co-teacher guiding them through the Model Context Protocol. It's exactly the kind of work I love — modern engineering in service of real learning.",
+    "A good example of how I work here: Code Quest, a SchoolAI PowerUp I conceived and built myself — a Blockly maze game that teaches kids the fundamentals of coding, with an AI co-teacher guiding them through the Model Context Protocol. Nobody handed me a spec for it; I saw the gap and filled it. It's the kind of work I look for everywhere — modern engineering in service of real learning.",
   ],
   focus: [
     {

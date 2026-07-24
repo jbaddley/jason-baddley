@@ -21,7 +21,7 @@ const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata: Metadata = {
   title: {
-    default: `${profile.name} — Product Engineer & Inventor`,
+    default: `${profile.name} — ${profile.title}`,
     template: `%s · ${profile.name}`,
   },
   description: profile.tagline,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: `${profile.name} — Product Engineer & Inventor`,
+    title: `${profile.name} — ${profile.title}`,
     description: profile.tagline,
     type: "website",
     images: [{ url: `${base}/icons/jbaddley-512x512.png`, width: 512, height: 512 }],
